@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inspection.css">
+    <title>MAIDA</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <h2><a href="https://jsang07.github.io/maidaHome/" class="nav__logo">M<span
+                        style="color: rgb(57, 90, 208);">AI</span>DA</a></h2>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <p class="nav__link active-link">Inspection</p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bar container">
+            <h2 style="text-align: center; margin-bottom: 8px;">당신만을 위한 운동 보조식품을 추천해드려요</h2>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <br><br>
+            <div id="content">
+                <div class="slide active">
+                    <h1>어떤 운동을 하고 계신가요?</h1>
+                    <div class="button-container">
+                        <button id="selected-button" class="icon-button">
+                            <img width="65" height="65"
+                                src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-dumbell-hotel-services-flatarticons-blue-flatarticons.png"
+                                alt="external-dumbell-hotel-services-flatarticons-blue-flatarticons" />
+                            <br>
+                            <p class="button-text">웨이트 트레이닝</p>
+                        </button>
+                        <button id="selected-button" class="icon-button">
+                            <img width="64" height="64"
+                                src="https://img.icons8.com/pieces/64/experimental-running-pieces.png"
+                                alt="experimental-running-pieces" />
+                            <br>
+                            <p class="button-text">유산소, 스포츠</p>
+                        </button>
+                        <button id="selected-button" class="icon-button">
+                            <img width="64" height="64"
+                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-rehabilitation-disability-flaticons-lineal-color-flat-icons.png"
+                                alt="external-rehabilitation-disability-flaticons-lineal-color-flat-icons" />
+                            <br>
+                            <p class="button-text">재활운동</p>
+                        </button>
+                    </div>
+                    <h1>어떤 보조식품을 섭취하고 싶은가요?</h1>
+                    <div class="button-container">
+                        <button id="selected-button" class="text-button">
+                            <p class="button-text">단백질 보충제</p>
+                        </button>
+                        <button id="selected-button" class="text-button">
+                            <p class="button-text">BCAA</p>
+                        </button>
+                        <button id="selected-button" class="text-button">
+                            <p class="button-text">크레아틴</p>
+                        </button>
+                        <button id="selected-button" class="text-button">
+                            <p class="button-text">아르기닌</p>
+                        </button>
+                        <button id="selected-button" class="text-button">
+                            <p class="button-text">체지방 컷팅제</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <h1>당신은 누구인가요?</h1>
+                    <div style="display: flex;">
+                        <button id="selected-button" style="margin: 10px;" class="text-button">
+                            <p class="button-text">남자</p>
+                        </button>
+                        <button id="selected-button" style="margin: 10px;" class="text-button">
+                            <p class="button-text">여자</p>
+                        </button>
+                    </div>
+                    <br>
+                    <div class="age-cm-kg">
+                        <h4>나이 <input class="style-input"> </h4>
+                        <h4>키 <input class="style-input"> cm </h4>
+                        <h4>몸무게 <input class="style-input"> kg</h4>
+                    </div>
+                    <br>
+
+                    <br><br>
+                    <h1>AI에게 목표를 말해주세요!</h1>
+                    <br>
+                    <textarea class="big-textarea" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="slide">
+                    <h1>운동 보조식품을 먹고 부작용 겪은 적이 있나요?</h1>
+                    <div class="button-container">
+                        <button id="selected-button" class="text-button2">
+                            <p class="button-text">소화 불량(복통, 설사)</p>
+                        </button>
+                        <button id="selected-button" class="text-button2">
+                            <p class="button-text">피부 트러블</p>
+                        </button>
+                        <button id="selected-button" class="text-button2">
+                            <p class="button-text">두통, 어지러움</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <h1>운동 보조식품을 먹을 때 어떤걸 조심하나요?</h1>
+                    <div class="button-container">
+                        <button id="selected-button" class="text-button2">
+                            <p class="button-text">유당 불내증</p>
+                        </button>
+                        <button id="selected-button" class="text-button2">
+                            <p class="button-text">고혈압</p>
+                        </button>
+                        <button id="selected-button" class="text-button2">
+                            <p class="button-text">고지혈증</p>
+                        </button>
+                        <button id="selected-button" class="text-button2">
+                            <p class="button-text">신장 기능 이상</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <h1>결과 분석 완료!</h1>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <button onclick="downProgress()" id="prev" class="prev-button">이전</button>
+        <button onclick="upProgress()" id="next" class="next-button">다음</button>
+    </footer>
+
+    <script src="insperction.js"></script>
+</body>
+
+</html>
