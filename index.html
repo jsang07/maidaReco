@@ -12,7 +12,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <h2><a href="https://jsang07.github.io/maidaHome/" class="nav__logo">M<span
-                        style="color: rgb(57, 90, 208);">AI</span>DA</a></h2>
+                        style="color: rgb(15, 34, 102);">AI</span>DA</a></h2>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
 
@@ -26,31 +26,38 @@
 
     <main>
         <section class="bar container">
-            <h2 style="text-align: center; margin-bottom: 8px;">당신만을 위한 운동 보조식품을 추천해드려요</h2>
+            <h1 style="text-align: center; margin-bottom: 8px;">당신만을 위한 운동 보조식품을 추천해드려요</h1>
             <div class="progress-bar">
                 <div id="progress" class="progress"></div>
+                <div class="progress-text">
+                    0%
+                </div>
             </div>
-            <br><br>
+
+            <!-- <div class="progress-bar">
+                <div id="progress" class="progress">25%</div>
+            </div> -->
+
             <div id="content">
                 <div class="slide active">
                     <h1>어떤 운동을 하고 계신가요?</h1>
                     <div class="button-container">
                         <button id="selected-button" class="icon-button">
-                            <img width="65" height="65"
+                            <img width="85" height="85"
                                 src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-dumbell-hotel-services-flatarticons-blue-flatarticons.png"
                                 alt="external-dumbell-hotel-services-flatarticons-blue-flatarticons" />
                             <br>
                             <p class="button-text">웨이트 트레이닝</p>
                         </button>
                         <button id="selected-button" class="icon-button">
-                            <img width="64" height="64"
+                            <img width="85" height="85"
                                 src="https://img.icons8.com/pieces/64/experimental-running-pieces.png"
                                 alt="experimental-running-pieces" />
                             <br>
                             <p class="button-text">유산소, 스포츠</p>
                         </button>
                         <button id="selected-button" class="icon-button">
-                            <img width="64" height="64"
+                            <img width="85" height="85"
                                 src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-rehabilitation-disability-flaticons-lineal-color-flat-icons.png"
                                 alt="external-rehabilitation-disability-flaticons-lineal-color-flat-icons" />
                             <br>
@@ -80,10 +87,12 @@
                     <h1>당신은 누구인가요?</h1>
                     <div style="display: flex;">
                         <button id="selected-button" style="margin: 10px;" class="text-button">
-                            <p class="button-text">남자</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/male.png" alt="male" />
+
                         </button>
                         <button id="selected-button" style="margin: 10px;" class="text-button">
-                            <p class="button-text">여자</p>
+                            <img width="48" height="48" src="https://img.icons8.com/color/48/female.png" alt="female" />
+
                         </button>
                     </div>
                     <br>
@@ -97,7 +106,10 @@
                     <br><br>
                     <h1>AI에게 목표를 말해주세요!</h1>
                     <br>
-                    <textarea class="big-textarea" id="" cols="30" rows="10"></textarea>
+
+                    <textarea placeholder="EX) 나는 근육을 키우고싶어, 그중에서도 팔이 두껍고 어깨가 넓어지면 좋겠어" class="big-textarea" id=""
+                        cols="30" rows="10"></textarea>
+
                 </div>
                 <div class="slide">
                     <h1>운동 보조식품을 먹고 부작용 겪은 적이 있나요?</h1>
@@ -114,7 +126,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <h1>운동 보조식품을 먹을 때 어떤걸 조심하나요?</h1>
+                    <h1>이런 것들을 신경써주세요!</h1>
                     <div class="button-container">
                         <button id="selected-button" class="text-button2">
                             <p class="button-text">유당 불내증</p>
@@ -138,8 +150,8 @@
     </main>
 
     <footer class="footer-container">
-        <button onclick="downProgress()" id="prev" class="prev-button">이전</button>
-        <button onclick="upProgress()" id="next" class="next-button">다음</button>
+        <button onclick="downProgress()" id="prev" class="prev-button">&lt</button>
+        <button onclick="upProgress()" id="next" class="next-button">&gt</button>
     </footer>
 
     <script src="insperction.js"></script>
