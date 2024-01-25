@@ -357,6 +357,10 @@ img {
 }
 
 @media (max-width: 1400px) {
+    .textarea-title {
+        margin-top: 10px;
+    }
+
     p {
         font-size: 105%;
     }
@@ -377,6 +381,10 @@ img {
 }
 
 @media (max-width: 1200px) {
+    .textarea-title {
+        margin-top: 1%;
+    }
+
     p {
         font-size: small;
     }
@@ -425,6 +433,8 @@ img {
 }
 
 @media (max-width: 600px) {
+
+
     h1 {
         font-size: medium;
     }
@@ -504,7 +514,12 @@ img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.textarea-title {
+    margin-top: 3%;
+}
+
 .big-textarea {
+    margin-top: 1%;
     width: 100%;
     height: 120px;
     padding: 20px;
