@@ -82,11 +82,11 @@
                 <div class="slide">
                     <h1>당신은 누구인가요?</h1>
                     <div style="display: flex;">
-                        <button id="selected-button" style="margin: 10px;" class="text-button">
+                        <button class="sex-button">
                             <img width="48" height="48" src="https://img.icons8.com/color/48/male.png" alt="male" />
 
                         </button>
-                        <button id="selected-button" style="margin: 10px;" class="text-button">
+                        <button class="sex-button">
                             <img width="48" height="48" src="https://img.icons8.com/color/48/female.png" alt="female" />
 
                         </button>
@@ -106,30 +106,43 @@
                     <h1>운동 보조식품을 먹고 부작용 겪은 적이 있나요?</h1>
                     <div class="button-container">
                         <button id="selected-button" class="text-button2">
+                            <img width="85" height="85" src="https://img.icons8.com/arcade/64/stomach-pain.png"
+                                alt="stomach-pain" />
+                            <br>
                             <p class="button-text">소화 불량(복통, 설사)</p>
                         </button>
                         <button id="selected-button" class="text-button2">
+                            <img width="85" height="85"
+                                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-acne-cbd-oil-flaticons-lineal-color-flat-icons.png"
+                                alt="external-acne-cbd-oil-flaticons-lineal-color-flat-icons" />
+                            <br>
                             <p class="button-text">피부 트러블</p>
                         </button>
                         <button id="selected-button" class="text-button2">
+                            <img width="85" height="85"
+                                src="https://img.icons8.com/external-vitaliy-gorbachev-blue-vitaly-gorbachev/60/external-headache-virus-transmission-vitaliy-gorbachev-blue-vitaly-gorbachev-1.png"
+                                alt="external-headache-virus-transmission-vitaliy-gorbachev-blue-vitaly-gorbachev-1" />
+                            <br>
                             <p class="button-text">두통, 어지러움</p>
                         </button>
                     </div>
+                    <!-- <h1 class="textarea-title">항목 외 겪었던 기타 부작용을 적어주세요!</h1>
+                    <textarea placeholder="" class="big-textarea" id="" cols="30" rows="10"></textarea> -->
                 </div>
                 <div class="slide">
                     <h1>이런 것들을 신경써주세요!</h1>
                     <div class="button-container">
-                        <button id="selected-button" class="text-button2">
-                            <p class="button-text">유당 불내증</p>
+                        <button id="selected-button" class="text-button3">
+                            <h3 class="button-text">유당 불내증</h3>
                         </button>
-                        <button id="selected-button" class="text-button2">
-                            <p class="button-text">고혈압</p>
+                        <button id="selected-button" class="text-button3">
+                            <h3 class="button-text">고혈압</h3>
                         </button>
-                        <button id="selected-button" class="text-button2">
+                        <button id="selected-button" class="text-button3">
                             <p class="button-text">고지혈증</p>
                         </button>
-                        <button id="selected-button" class="text-button2">
-                            <p class="button-text">신장 기능 이상</p>
+                        <button id="selected-button" class="text-button3">
+                            <h3 class="button-text">신장 기능 이상</h3>
                         </button>
                     </div>
                 </div>
@@ -141,8 +154,8 @@
     </main>
 
     <footer class="footer-container">
-        <button onclick="downProgress()" id="prev" class="prev-button">&lt</button>
-        <button onclick="upProgress()" id="next" class="next-button">&gt</button>
+        <button onclick="downProgress()" id="prev" class="prev-button">이전</button>
+        <button onclick="upProgress()" id="next" class="next-button">다음</button>
     </footer>
 
     <script src="insperction.js"></script>

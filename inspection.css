@@ -104,6 +104,7 @@ img {
 
 
 .footer-container {
+    gap: 25px;
     margin-bottom: 30px;
     position: fixed;
     bottom: 0;
@@ -115,9 +116,6 @@ img {
     justify-content: center;
 }
 
-.footer-container button {
-    margin-left: 10px;
-}
 
 @media (max-width: 600px) {
     .footer-container {
@@ -127,26 +125,26 @@ img {
 
 .next-button {
     font-size: x-large;
-    width: 3.8rem;
+    width: 12rem;
     height: 3.8rem;
     font-weight: 600;
     background-color: #3388ff;
     color: #FFF;
     border: none;
-    border-radius: 50%;
+    border-radius: 30px;
     cursor: pointer;
 }
 
 .prev-button {
     font-size: x-large;
-    width: 3.8rem;
+    width: 12rem;
     height: 3.8rem;
     font-weight: 600;
     background-color: #adadad;
     color: white;
     color: #FFF;
     border: none;
-    border-radius: 50%;
+    border-radius: 30px;
     cursor: pointer;
 }
 
@@ -298,24 +296,24 @@ img {
     cursor: pointer;
 }
 
-.icon-button.selected {
+.icon-button.clicked {
     background-color: #197ef1;
 }
 
-.icon-button.selected p {
+.icon-button.clicked p {
     color: #FFF;
 }
 
 .text-button {
     width: 10rem;
-    height: 8rem;
+    height: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border: 1px solid rgb(209, 208, 208);
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: white;
     cursor: pointer;
 }
@@ -381,6 +379,23 @@ img {
 }
 
 @media (max-width: 1200px) {
+    .sex-button {
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .prev-button {
+        width: 10rem;
+        height: 3rem;
+        font-size: medium;
+    }
+
+    .next-button {
+        width: 10rem;
+        height: 3rem;
+        font-size: medium;
+    }
+
     .textarea-title {
         margin-top: 1%;
     }
@@ -407,12 +422,17 @@ img {
     }
 
     .text-button {
-        width: 6rem;
+        width: 8rem;
         height: 4rem;
     }
 }
 
 @media (max-width: 900px) {
+    .sex-button {
+        width: 3rem;
+        height: 2rem;
+    }
+
     p {
         font-size: small;
     }
@@ -428,7 +448,7 @@ img {
 
     .text-button {
         width: 6rem;
-        height: 8rem;
+        height: 5rem;
     }
 }
 
@@ -458,6 +478,26 @@ img {
     }
 }
 
+.sex-button {
+    margin-left: 10px;
+    width: 9rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sex-button.clicked {
+    background-color: #197ef1;
+    color: white;
+}
+
+
 .text-button2 {
     margin: 10px;
     width: 15rem;
@@ -478,6 +518,29 @@ img {
 }
 
 .text-button2.selected p {
+    color: #FFF;
+}
+
+.text-button3 {
+    margin: 10px;
+    width: 12.5rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 70px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.text-button3.selected {
+    background-color: #197ef1;
+}
+
+.text-button3.selected p {
     color: #FFF;
 }
 

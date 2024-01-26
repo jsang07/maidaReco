@@ -28,31 +28,22 @@ prevButton.addEventListener('click', function () {
     let newSlide = currentSlide - 1;
     if (newSlide < 0) newSlide = slides.length - 1;
     showSlide(newSlide);
+    // console.log(newSlide)
 });
 
 nextButton.addEventListener('click', function () {
     let newSlide = currentSlide + 1;
     if (newSlide >= slides.length) newSlide = 0;
+    // if (newSlide === 4) {
+    //     setTimeout(function () {
+    //         newSlide = currentSlide + 1;
+    //     }, 3000);
+    // }
     showSlide(newSlide);
+    // console.log(newSlide)
 });
 
 updateButtonStatus();
-
-// let currentProgress = 0;
-
-// function upProgress() {
-//     const progressBar = document.getElementById('progress');
-//     currentProgress += 25;
-//     if (currentProgress > 100) currentProgress = 100;
-//     progressBar.style.width = currentProgress + '%';
-// }
-
-// function downProgress() {
-//     const progressBar = document.getElementById('progress');
-//     if (currentProgress > 0) currentProgress -= 25;
-//     if (currentProgress > 100) currentProgress = 100;
-//     progressBar.style.width = currentProgress + '%';
-// }
 
 var currentProgress = 0;
 var progressElement = document.querySelector('.progress');
@@ -78,17 +69,46 @@ function downProgress() {
 
 
 
-const iconbuttons = document.querySelectorAll('.icon-button');
+//버튼 단일 선택
+var sexbuttons = document.getElementsByClassName('sex-button');
 
-iconbuttons.forEach(button => {
-    button.addEventListener('click', function () {
-        if (this.classList.contains('selected')) {
-            this.classList.remove('selected');
-        } else {
-            this.classList.add('selected');
+for (var i = 0; i < sexbuttons.length; i++) {
+    sexbuttons[i].addEventListener('click', function () {
+        if (!this.classList.contains('clicked')) {
+            for (var j = 0; j < sexbuttons.length; j++) {
+                sexbuttons[j].classList.remove('clicked');
+            }
+            this.classList.add('clicked');
         }
     });
-});
+}
+
+var iconbuttons = document.getElementsByClassName('icon-button');
+
+for (var i = 0; i < iconbuttons.length; i++) {
+    iconbuttons[i].addEventListener('click', function () {
+        if (!this.classList.contains('clicked')) {
+            for (var j = 0; j < iconbuttons.length; j++) {
+                iconbuttons[j].classList.remove('clicked');
+            }
+            this.classList.add('clicked');
+        }
+    });
+}
+
+//버튼 중복선택
+
+// const iconbuttons = document.querySelectorAll('.icon-button');
+
+// iconbuttons.forEach(button => {
+//     button.addEventListener('click', function () {
+//         if (this.classList.contains('selected')) {
+//             this.classList.remove('selected');
+//         } else {
+//             this.classList.add('selected');
+//         }
+//     });
+// });
 
 const textbuttons = document.querySelectorAll('.text-button');
 
@@ -105,6 +125,18 @@ textbuttons.forEach(button => {
 const textbuttons2 = document.querySelectorAll('.text-button2');
 
 textbuttons2.forEach(button => {
+    button.addEventListener('click', function () {
+        if (this.classList.contains('selected')) {
+            this.classList.remove('selected');
+        } else {
+            this.classList.add('selected');
+        }
+    });
+});
+
+const textbuttons3 = document.querySelectorAll('.text-button3');
+
+textbuttons3.forEach(button => {
     button.addEventListener('click', function () {
         if (this.classList.contains('selected')) {
             this.classList.remove('selected');
