@@ -304,6 +304,27 @@ img {
     color: #FFF;
 }
 
+.icon-button2 {
+    width: 17rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(209, 208, 208);
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.icon-button2.selected {
+    background-color: #197ef1;
+}
+
+.icon-button2.selected p {
+    color: #FFF;
+}
+
 .text-button {
     width: 10rem;
     height: 4rem;
@@ -319,11 +340,12 @@ img {
 }
 
 .text-button.selected {
-    background-color: #197ef1;
+    border: 1px solid #96B3FF;
+    background-color: #96B3FF;
 }
 
 .text-button.selected p {
-    color: #FFF;
+    color: #fff;
 }
 
 @media (max-width: 1600px) {
@@ -344,6 +366,11 @@ img {
     }
 
     .icon-button {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .icon-button2 {
         width: 12rem;
         height: 12rem;
     }
@@ -372,8 +399,18 @@ img {
         height: 9rem;
     }
 
+    .icon-button2 {
+        width: 11rem;
+        height: 9rem;
+    }
+
     .text-button {
-        width: 8rem;
+        width: 8.5rem;
+        height: 5rem;
+    }
+
+    .text-button2 {
+        width: 6rem;
         height: 6rem;
     }
 }
@@ -421,8 +458,18 @@ img {
         height: 9rem;
     }
 
+    .icon-button2 {
+        width: 9rem;
+        height: 9rem;
+    }
+
     .text-button {
         width: 8rem;
+        height: 4rem;
+    }
+
+    .text-button2 {
+        width: 4rem;
         height: 4rem;
     }
 }
@@ -446,6 +493,11 @@ img {
         height: 9rem;
     }
 
+    .icon-button2 {
+        width: 7rem;
+        height: 9rem;
+    }
+
     .text-button {
         width: 6rem;
         height: 5rem;
@@ -464,6 +516,11 @@ img {
     }
 
     .icon-button {
+        width: 7rem;
+        height: 9rem;
+    }
+
+    .icon-button2 {
         width: 7rem;
         height: 9rem;
     }
@@ -493,8 +550,7 @@ img {
 }
 
 .sex-button.clicked {
-    background-color: #197ef1;
-    color: white;
+    background-color: #003066;
 }
 
 
@@ -522,9 +578,10 @@ img {
 }
 
 .text-button3 {
+    font-size: medium;
     margin: 10px;
     width: 12.5rem;
-    height: 12rem;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -537,10 +594,11 @@ img {
 }
 
 .text-button3.selected {
-    background-color: #197ef1;
+    background-color: #96B3FF;
+    border: 1px solid #96B3FF;
 }
 
-.text-button3.selected p {
+.text-button3.selected h3 {
     color: #FFF;
 }
 
@@ -607,6 +665,18 @@ img {
     outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+.lottie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+lottie-player {
+    width: 300px;
+    height: 300px;
+}
+
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */

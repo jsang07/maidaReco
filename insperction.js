@@ -2,6 +2,7 @@ let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
+const result = document.getElementById('result');
 
 function showSlide(index) {
     slides[currentSlide].classList.remove('active');
@@ -22,6 +23,17 @@ function updateButtonStatus() {
     } else {
         nextButton.disabled = false;
     }
+
+    if (currentSlide === 4) {
+        setTimeout(() => {
+            result.style.display = 'block';
+        }, 5000);
+    }
+
+    if (currentSlide === 4) {
+        prevButton.style.display = 'none';
+        nextButton.style.display = 'none';
+    }
 }
 
 prevButton.addEventListener('click', function () {
@@ -36,7 +48,7 @@ nextButton.addEventListener('click', function () {
     if (newSlide >= slides.length) newSlide = 0;
     // if (newSlide === 4) {
     //     setTimeout(function () {
-    //         newSlide = currentSlide + 1;
+    //         showSlide(newSlide)
     //     }, 3000);
     // }
     showSlide(newSlide);
@@ -98,17 +110,17 @@ for (var i = 0; i < iconbuttons.length; i++) {
 
 //버튼 중복선택
 
-// const iconbuttons = document.querySelectorAll('.icon-button');
+const iconbuttons2 = document.querySelectorAll('.icon-button2');
 
-// iconbuttons.forEach(button => {
-//     button.addEventListener('click', function () {
-//         if (this.classList.contains('selected')) {
-//             this.classList.remove('selected');
-//         } else {
-//             this.classList.add('selected');
-//         }
-//     });
-// });
+iconbuttons2.forEach(button => {
+    button.addEventListener('click', function () {
+        if (this.classList.contains('selected')) {
+            this.classList.remove('selected');
+        } else {
+            this.classList.add('selected');
+        }
+    });
+});
 
 const textbuttons = document.querySelectorAll('.text-button');
 
